@@ -45,4 +45,3 @@ def decrypt(bs, k, iv, verbose=False):
   if verbose:
     log(f'Final decrypted message: {bytearray_to_str(ba)}', 1)
   return ba
-

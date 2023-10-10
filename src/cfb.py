@@ -75,8 +75,3 @@ def decrypt(cs, k, iv, verbose=False):
   if verbose:
     log(f'Final decrypted message: {bytearray_to_4_bit_block_string(result)}', 1)
   return result
-
-
-if __name__ == '__main__':
-  b = 0b10100000
-  print(get_msb(b, 3, 8))

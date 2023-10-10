@@ -126,8 +126,8 @@ def join(d1, d2, size, verbose=False, indent=0):
 
 # Reduces 4 bits to 2 bits by matrix lookup
 def s_lookup(d, matrix, verbose=False, indent=0):
-  r = ((8 & d) >> 2) | (1 & d)        # p0 p3
-  c = ((4 & d) >> 1) | ((2 & d) >> 1) # p1 p2
+  r = ((8 & d) >> 2) | (1 & d)         # p0 p3
+  c = ((4 & d) >> 1) | ((2 & d) >> 1)  # p1 p2
   result = matrix[r][c]
   if verbose:
     log(f'Lookup using marix:', indent)

@@ -3,8 +3,7 @@ import sdes
 
 def main():
   print('Example 1: Simple DES Implementation\n')
-  # c = 0b01000110
-  m = 0b10010111  # 0b11000001
+  m = 0b10010111
   k = 0b1010000010
   c2 = sdes.encrypt(m, k, verbose=True)
   print('\n')
